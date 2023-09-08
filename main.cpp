@@ -1,7 +1,8 @@
 #include <iostream>
-
 using namespace std;
 
+
+// Making a program that converts seconds to Days, Hours, minutes, and seconds
 int main() {
 
     // Defining Variables
@@ -23,7 +24,7 @@ int main() {
     int remaining_seconds = user_input % seconds_per_minute;
 
 
-    // Minutes and Seconds
+    // Conditions for certain numbers
     if (user_input == 1 && user_input == 60 || user_input == 3600) {
         cout << user_input << " seconds = " << days << " days " << hours << " hours " << minutes << " minutes "
              << remaining_seconds << " seconds";;
