@@ -11,9 +11,6 @@ int primeNumber() {
 	
 	if (number == 1)
 		cout << "It's a prime.";
-	else {
-		cout << "it's' not a prime";
-	}
 	for(int i = 2; i <= number; i++) {
 		result = number % i;
 		if (result == 1) {
