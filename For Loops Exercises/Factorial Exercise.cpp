@@ -2,18 +2,17 @@
 
 using namespace std;
 
-int factorial(int out) {
-	
-	// formula for factorial is n! = n * n - 1
-	int n;
-	for(int i = 0; i <= out; i++) {
-		n += out * (out - 1); // n = n + out * (out - 1) 
-	}
-	return n;
-}
+int main() {
+	int n, number = 1;
 
-int main () {
+	cout << "Enter the number: ";
+	cin >> n;
+
+	// formula for factorial is n! = n * n - 1
+	for(int i = 1; i <= n; i++) {
+		number *= i;
+	}
 	
-	cout << factorial(5);
+	cout << "The factorial of " << n << " is " << number;
 	
 }
